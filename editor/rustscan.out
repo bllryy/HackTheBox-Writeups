@@ -1,0 +1,14 @@
+# Nmap 7.97 scan initiated Sun Aug 24 22:00:25 2025 as: nmap -vvv -p 22,80,8080 -4 -sV -o rustscan.out 10.10.11.80
+Nmap scan report for 10.10.11.80
+Host is up, received syn-ack (0.026s latency).
+Scanned at 2025-08-24 22:00:25 EDT for 7s
+
+PORT     STATE SERVICE REASON  VERSION
+22/tcp   open  ssh     syn-ack OpenSSH 8.9p1 Ubuntu 3ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+80/tcp   open  http    syn-ack nginx 1.18.0 (Ubuntu)
+8080/tcp open  http    syn-ack Jetty 10.0.20
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Aug 24 22:00:32 2025 -- 1 IP address (1 host up) scanned in 7.57 seconds
